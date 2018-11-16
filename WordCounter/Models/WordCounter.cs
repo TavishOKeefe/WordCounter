@@ -1,25 +1,93 @@
-using System.Collections.Generic;
 using System;
 
 namespace WordCounter
 {
-  public class WordCounter
+  public class WordAnalysis
   {
     private string _word;
-    private List<string> _sentence;
+    private string _sentence;
 
-    public void InputedWord (string word, List<string> sentence)
+    public WordAnalysis(string word, string sentence)
     {
       _word = word;
       _sentence = sentence;
     }
 
-    public string LetterCompare ()
+    public string GetWordToCompare()
     {
-      return "dog";
+      return _word;
     }
 
+    public bool CheckIfWordIsInString()
+    {
+      if (_sentence.Contains(_word))
+      {
+        return true;
+      }
+      else
+      {
+        return false;
+      }
+    }
+    // 
+    // public bool BreakWordIntoCharacters()
+    // {
+    //   char[] wordArray = _word.ToCharArray();
+    //
+    //   return true;
+    // }
+    //
+    // public bool BreakSentenceIntoCharacters()
+    // {
+    //   char[] sentenceArray = _sentence.ToCharArray();
+    //
+    //   return true;
+    // }
 
+    public bool CompareFirstLetterOfTwoInputs()
+    {
+      char[] wordArray = _word.ToCharArray();
+      char[] sentenceArray = _sentence.ToCharArray();
 
+      if (wordArray == sentenceArray)
+      {
+        return true;
+      }
+      else
+      {
+        return false;
+      }
+    }
+
+    // public string GetSentenceToCompare()
+    // {
+    //   return _sentence;
+    // }
+    //
+    // public string CompareFirstLetter()
+    // {
+    //   string value = "a";
+    //   char[] array = value.ToCharArray();
+    //
+    //   for (int i=0; i<= array.Length; i ++)
+    //   {
+    //     char letter = array[i=0];
+    //     return letter;
+    //   }
+    //
+    // }
+    //
+    // public string CompareFirstInSentence()
+    // {
+    //   string valueSentence = "a dog walks";
+    //   char[] arrayTwo = valueSentence.ToCharArray();
+    //
+    //   for (int i=0; i<= arrayTwo.Length; i ++)
+    //   {
+    //     char FirstLetter = arrayTwo[i=0];
+    //     return FirstLetter;
+    //   }
+
+    // }
   }
 }
