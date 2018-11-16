@@ -7,25 +7,20 @@
 _This is the back end logic for a program that gathers both a word and sentence from a user, then checks how frequently the word appears in the sentence._
 
 ## Specifications
-* _**When User picks their movie, age, and the time of the showing; the expected result should be an out put of the information they put in.**_  
-_Example Input: "Venom, 17, 4:00 AM"_  
-_Example Output:_
+* _**When a user picks a word, the program will determine whether the first letter matches the first letter of the first word in the inputed sentence.**_  
+_Example Input: "a"_  
+_Example Output: True or False_
 
-  _"
-  Movie: Venom,    
-  your age: 17   
-  time of showing: 4:00 AM
-  "_
+* _**When a user picks a word, the program will determine whether the first letter matches the first letter of any of the words in the inputed sentence.**_  
+_Example Input: "a"_  
+_Example Output: True or False_
 
-* _**If the user picks a movie that they are too young to see, the program should tell them that they are not allowed to buy the ticket.**_  
-_Example Input: "Adult Film, 13 years old"_  
-_Example Output: "You cannot purchase this ticket: Not purchasable by minors."_
+* _**If the first letter of the inputed word matches the first letter of an inputed word in the sentence, program with check of following letter matches.**_  
+_Example Input: "a", "n"_  
+_Example Output: True or False_
 
-* _**If a person is over the age of 64 the price of the movie will be less than standard price.**_
+* _**If
 
-* _**If a person is below the age of 13, the price of the movie will be less than standard price.**_
-
-* _**If a person comes to see a film before 16h, the price of the movie will be less than the standard price.**_
 
 ## Setup/Installation Requirements
 
