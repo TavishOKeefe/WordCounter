@@ -13,8 +13,14 @@ namespace WordCounter.Tests
       WordAnalysis compareFirst = new WordAnalysis("a", "a sentence");
       string firstWord = compareFirst.GetWordToCompare();
       Assert.AreEqual("a", firstWord);
-      // RepeatCounter newRepeatCounter = new RepeatCounter("word", "A sentence");
-      // Assert.AreEqual(typeof(RepeatCounter), newRepeatCounter.GetType());
+    }
+    [TestMethod]
+    public void CompareFirstLetter_CompareFirstLetterToFistLetterOfFirstWord_True()
+    {
+      WordAnalysis compareFirst = new WordAnalysis("a", "a sentence");
+      string firstLetter = compareFirst.CompareFirstLetter();
+      string firstLetterInSentence = compareFirst.CompareFirstInSentence();
+      Assert.AreEqual(firstLetterInSentence, firstLetter);
     }
   }
 }
