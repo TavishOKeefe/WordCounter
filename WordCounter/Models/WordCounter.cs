@@ -6,17 +6,17 @@ namespace WordCounter
   public class WordCounter
   {
     private string _word;
-    private List<string> _sentence = new List<string>{};
+    private List<string> _sentence;
 
-    public void inputedWord (string word, List<string> sentence)
+    public void InputedWord (string word, List<string> sentence)
     {
       _word = word;
       _sentence = sentence;
     }
 
-    public bool LetterCompare ()
+    public string LetterCompare ()
     {
-      return true;
+      return "dog";
     }
 
 

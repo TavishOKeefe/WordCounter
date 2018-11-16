@@ -11,10 +11,11 @@ namespace WordCounter.Tests
     [TestMethod]
     public void LetterCompare_CompareFirstLetterToFistLetterOfFirstWord_True()
     {
-      List<string> sentence = new List<string>{"and", "I", "ran"};
-      WordCounter compareFirst = new WordCounter("and", sentence);
+      string expectedWord = "and";
+      List<string> sentence = new List<string>{"and"};
+      WordCounter compareFirst = new WordCounter(expectedWord, sentence);
       string firstWord = compareFirst.LetterCompare();
-      Assert.AreEqual(true, firstWord);
+      Assert.AreEqual("and", firstWord);
     }
 
 
