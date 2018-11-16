@@ -29,27 +29,27 @@ namespace WordCounter
         return false;
       }
     }
-    // 
-    // public bool BreakWordIntoCharacters()
-    // {
-    //   char[] wordArray = _word.ToCharArray();
-    //
-    //   return true;
-    // }
-    //
-    // public bool BreakSentenceIntoCharacters()
-    // {
-    //   char[] sentenceArray = _sentence.ToCharArray();
-    //
-    //   return true;
-    // }
+
+    public bool BreakWordIntoCharacters()
+    {
+      char[] wordArray = _word.ToCharArray();
+
+      return true;
+    }
+
+    public bool BreakSentenceIntoCharacters()
+    {
+      char[] sentenceArray = _sentence.ToCharArray();
+
+      return true;
+    }
 
     public bool CompareFirstLetterOfTwoInputs()
     {
       char[] wordArray = _word.ToCharArray();
       char[] sentenceArray = _sentence.ToCharArray();
 
-      if (wordArray == sentenceArray)
+      if (wordArray.Length == sentenceArray.Length)
       {
         return true;
       }
