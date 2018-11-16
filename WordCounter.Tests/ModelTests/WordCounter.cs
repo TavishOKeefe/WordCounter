@@ -17,10 +17,9 @@ namespace WordCounter.Tests
     [TestMethod]
     public void CompareFirstLetter_CompareFirstLetterToFistLetterOfFirstWord_True()
     {
-      WordAnalysis compareFirst = new WordAnalysis("a", "a sentence");
-      string firstLetter = compareFirst.CompareFirstLetter();
-      string firstLetterInSentence = compareFirst.CompareFirstInSentence();
-      Assert.AreEqual(firstLetterInSentence, firstLetter);
+      WordAnalysis compareSecond = new WordAnalysis("dog", "I saw a dog");
+      bool firstLetter = compareSecond.CheckIfWordIsInString();
+      Assert.AreEqual(true, firstLetter);
     }
   }
 }
