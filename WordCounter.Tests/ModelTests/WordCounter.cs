@@ -36,11 +36,18 @@ namespace WordCounter.Tests
       Assert.AreEqual(true, brokenSentence);
     }
     [TestMethod]
-    public void CompareFirstLetterOfTwoInputs_CompareFirstLetterOfWordAndSentence_True()
+    public void CompareTwoInputs_CompareWordAndSentence_True()
     {
-      WordAnalysis compareFistLetters = new WordAnalysis("dog", "dog");
-      bool firstLetter = compareFistLetters.CompareFirstLetterOfTwoInputs();
-      Assert.AreEqual(true, firstLetter);
+      WordAnalysis compareInputs = new WordAnalysis("dog", "dog");
+      bool inputs = compareInputs.CompareTwoInputs();
+      Assert.AreEqual(true, inputs);
+    }
+    [TestMethod]
+    public void splitSentence_CompareWordAndSentence_True()
+    {
+      WordAnalysis compareStrings = new WordAnalysis("dog", "I seen a dog");
+      bool strings = compareStrings.splitSentence();
+      Assert.AreEqual(true, strings);
     }
   }
 }

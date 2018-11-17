@@ -44,7 +44,7 @@ namespace WordCounter
       return true;
     }
 
-    public bool CompareFirstLetterOfTwoInputs()
+    public bool CompareTwoInputs()
     {
       char[] wordArray = _word.ToCharArray();
       char[] sentenceArray = _sentence.ToCharArray();
@@ -58,6 +58,39 @@ namespace WordCounter
         return false;
       }
     }
+
+    public string splitSentence()
+    {
+      string[] convertedSentence = _sentence.Split(' ');
+
+      foreach (string word in convertedSentence)
+      {
+        if (word.Length == _word.Length)
+
+        return true;
+      }
+      else
+      {
+        return false;
+      }
+    }
+
+
+    // public bool CompareFirstLetter()
+    // {
+    //   char[] wordArray = _word.ToCharArray();
+    //   char[] sentenceArray = _sentence.ToCharArray();
+    //
+    //   for (int i = 0; i < wordArray.Length; i ++)
+    //   {
+    //     string compare = wordArray[i];
+    //   }
+    //   for (int i = 0; i < sentenceArray.Length; i ++)
+    //   {
+    //     string compareSentence = sentenceArray[i];
+    //   }
+    //   return true;
+    // }
 
     // public string GetSentenceToCompare()
     // {
