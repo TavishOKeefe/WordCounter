@@ -59,19 +59,21 @@ namespace WordCounter
       }
     }
 
-    public string splitSentence()
+    public bool splitSentence()
     {
-      string[] convertedSentence = _sentence.Split(' ');
+      string phrase = _sentence;
+      string[] convertedSentence = phrase.Split(' ');
 
-      foreach (string word in convertedSentence)
+      foreach (string words in convertedSentence)
       {
-        if (word.Length == _word.Length)
-
-        return true;
-      }
-      else
-      {
+        if (words == _word)
+        {
+          return true;
+        }
+        else
+        {
         return false;
+        }
       }
     }
 
