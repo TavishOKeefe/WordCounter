@@ -5,3 +5,10 @@
 /Users/tavishokeefe/Desktop/WordCounter.Solution/WordCounter/bin/Debug/netcoreapp1.1/WordCounter.pdb
 /Users/tavishokeefe/Desktop/WordCounter.Solution/WordCounter/obj/Debug/netcoreapp1.1/WordCounter.dll
 /Users/tavishokeefe/Desktop/WordCounter.Solution/WordCounter/obj/Debug/netcoreapp1.1/WordCounter.pdb
+/Users/tavishokeefe/Desktop/WordCounter/WordCounter/bin/Debug/netcoreapp1.1/WordCounter.deps.json
+/Users/tavishokeefe/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp1.1/WordCounter.csproj.CoreCompileInputs.cache
+/Users/tavishokeefe/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp1.1/WordCounter.AssemblyInfo.cs
+/Users/tavishokeefe/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp1.1/WordCounter.dll
+/Users/tavishokeefe/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp1.1/WordCounter.pdb
+/Users/tavishokeefe/Desktop/WordCounter/WordCounter/bin/Debug/netcoreapp1.1/WordCounter.dll
+/Users/tavishokeefe/Desktop/WordCounter/WordCounter/bin/Debug/netcoreapp1.1/WordCounter.pdb
