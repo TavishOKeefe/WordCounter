@@ -20,7 +20,8 @@ namespace WordCounter
 
     public bool CheckIfWordIsInString()
     {
-      if (_sentence.Contains(_word))
+      string inputWord = (_word);
+      if (_sentence.Contains(inputWord))
       {
         return true;
       }
@@ -29,20 +30,6 @@ namespace WordCounter
         return false;
       }
     }
-
-    // public bool BreakWordIntoCharacters()
-    // {
-    //   char[] wordArray = _word.ToCharArray();
-    //
-    //   return true;
-    // }
-    //
-    // public bool BreakSentenceIntoCharacters()
-    // {
-    //   char[] sentenceArray = _sentence.ToCharArray();
-    //
-    //   return true;
-    // }
 
     public bool CompareTwoInputs()
     {
@@ -59,23 +46,23 @@ namespace WordCounter
       }
     }
 
-    // public bool splitSentence()
-    // {
-    //   string phrase = _sentence;
-    //   string[] convertedSentence = phrase.Split(' ');
-    //
-    //   foreach (string words in convertedSentence)
-    //   {
-    //     if (words == _word)
-    //     {
-    //       return true;
-    //     }
-    //     else
-    //     {
-    //     return false;
-    //     }
-    //   }
-  // }
+    public bool splitSentence()
+    {
+      string phrase = _sentence;
+      string[] convertedSentence = phrase.Split(' ');
+
+      foreach (string words in convertedSentence)
+      {
+        if (words == _word)
+        {
+          return true;
+        }
+        else
+        {
+        return false;
+        }
+      }
+  }
 
 
     // public bool CompareFirstLetter()
