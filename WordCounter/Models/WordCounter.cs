@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace WordCounter
 {
@@ -46,23 +47,21 @@ namespace WordCounter
       }
     }
 
-    public bool splitSentence()
+    public List<string> splitSentence()
     {
       string phrase = _sentence;
       string[] convertedSentence = phrase.Split(' ');
+      List<string> matchingWords = new List<string> {};
 
       foreach (string words in convertedSentence)
       {
         if (words == _word)
         {
-          return true;
+          matchingWords.Add(words);
         }
-        else
-        {
-        return false;
-        }
+        return matchingWords;
       }
-  }
+    }
 
 
     // public bool CompareFirstLetter()

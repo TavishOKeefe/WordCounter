@@ -31,9 +31,9 @@ namespace WordCounter.Tests
     [TestMethod]
     public void splitSentence_CompareWordAndSentence_True()
     {
-      WordAnalysis compareStrings = new WordAnalysis("dog", "I seen a dog");
-      bool strings = compareStrings.splitSentence();
-      Assert.AreEqual(true, strings);
+      WordAnalysis compareStrings = new WordAnalysis("seen", "I seen a dog");
+      List<string> strings = compareStrings.splitSentence();
+      Assert.AreEqual("seen", strings);
     }
   }
 }

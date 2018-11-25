@@ -8502,11 +8502,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tavishokeefe/Desktop/WordCounter.Solution/WordCounter.Tests/WordCounter.Tests.csproj",
+      "projectUniqueName": "/Users/tavishokeefe/Desktop/WordCounterProject/WordCounter.Tests/WordCounter.Tests.csproj",
       "projectName": "WordCounter.Tests",
-      "projectPath": "/Users/tavishokeefe/Desktop/WordCounter.Solution/WordCounter.Tests/WordCounter.Tests.csproj",
+      "projectPath": "/Users/tavishokeefe/Desktop/WordCounterProject/WordCounter.Tests/WordCounter.Tests.csproj",
       "packagesPath": "/Users/tavishokeefe/.nuget/packages/",
-      "outputPath": "/Users/tavishokeefe/Desktop/WordCounter.Solution/WordCounter.Tests/obj/",
+      "outputPath": "/Users/tavishokeefe/Desktop/WordCounterProject/WordCounter.Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/tavishokeefe/.nuget/NuGet/NuGet.Config"
@@ -8520,8 +8520,8 @@
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "/Users/tavishokeefe/Desktop/WordCounter.Solution/WordCounter/WordCounter.csproj": {
-              "projectPath": "/Users/tavishokeefe/Desktop/WordCounter.Solution/WordCounter/WordCounter.csproj"
+            "/Users/tavishokeefe/Desktop/WordCounterProject/WordCounter/WordCounter.csproj": {
+              "projectPath": "/Users/tavishokeefe/Desktop/WordCounterProject/WordCounter/WordCounter.csproj"
             }
           }
         }
