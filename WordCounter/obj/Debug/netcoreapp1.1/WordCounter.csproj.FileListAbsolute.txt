@@ -19,3 +19,10 @@
 /Users/tavishokeefe/Desktop/WordCounterProject/WordCounter/obj/Debug/netcoreapp1.1/WordCounter.pdb
 /Users/tavishokeefe/Desktop/WordCounterProject/WordCounter/bin/Debug/netcoreapp1.1/WordCounter.dll
 /Users/tavishokeefe/Desktop/WordCounterProject/WordCounter/bin/Debug/netcoreapp1.1/WordCounter.pdb
+/Users/staff/Desktop/lina/grading/c/wk1/tavish-okeefe/WordCounter/bin/Debug/netcoreapp1.1/WordCounter.deps.json
+/Users/staff/Desktop/lina/grading/c/wk1/tavish-okeefe/WordCounter/obj/Debug/netcoreapp1.1/WordCounter.csproj.CoreCompileInputs.cache
+/Users/staff/Desktop/lina/grading/c/wk1/tavish-okeefe/WordCounter/obj/Debug/netcoreapp1.1/WordCounter.AssemblyInfo.cs
+/Users/staff/Desktop/lina/grading/c/wk1/tavish-okeefe/WordCounter/obj/Debug/netcoreapp1.1/WordCounter.dll
+/Users/staff/Desktop/lina/grading/c/wk1/tavish-okeefe/WordCounter/obj/Debug/netcoreapp1.1/WordCounter.pdb
+/Users/staff/Desktop/lina/grading/c/wk1/tavish-okeefe/WordCounter/bin/Debug/netcoreapp1.1/WordCounter.dll
+/Users/staff/Desktop/lina/grading/c/wk1/tavish-okeefe/WordCounter/bin/Debug/netcoreapp1.1/WordCounter.pdb

@@ -47,7 +47,7 @@ namespace WordCounter
       }
     }
 
-    public List<string> splitSentence()
+    public List<string> SplitSentence()
     {
       string phrase = _sentence;
       string[] convertedSentence = phrase.Split(' ');
@@ -59,11 +59,16 @@ namespace WordCounter
         {
           matchingWords.Add(words);
         }
-        return matchingWords;
       }
+      return matchingWords;
     }
 
-
+    public int CountWordsInPhrase()
+    {
+      List<string> matchingWords = SplitSentence();
+      int count = matchingWords.Count;
+      return count;
+    }
     // public bool CompareFirstLetter()
     // {
     //   char[] wordArray = _word.ToCharArray();

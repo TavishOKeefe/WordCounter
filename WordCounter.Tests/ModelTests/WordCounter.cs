@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Collections.Generic;
 using WordCounter;
 
 namespace WordCounter.Tests
@@ -29,11 +30,20 @@ namespace WordCounter.Tests
       Assert.AreEqual(true, inputs);
     }
     [TestMethod]
-    public void splitSentence_CompareWordAndSentence_True()
+    public void SplitSentence_CompareWordAndSentence_True()
     {
-      WordAnalysis compareStrings = new WordAnalysis("seen", "I seen a dog");
-      List<string> strings = compareStrings.splitSentence();
-      Assert.AreEqual("seen", strings);
+      WordAnalysis compareStrings = new WordAnalysis("seent", "I seent a dog");
+      List<string> strings = compareStrings.SplitSentence();
+      List<string>  expected = new List<string>(){"seent"};
+      CollectionAssert.AreEqual(expected, strings);
+    }
+    [TestMethod]
+    public void CountWordsInPhrase_ReturnsNumberOfInstancesOfWordInPhrase_Int()
+    {
+      WordAnalysis compareStrings = new WordAnalysis("seent", "I seent a dog");
+      int expectedCound = 1;
+      int actualCount = compareStrings.CountWordsInPhrase();
+      Assert.AreEqual(expectedCound, actualCount);
     }
   }
 }
