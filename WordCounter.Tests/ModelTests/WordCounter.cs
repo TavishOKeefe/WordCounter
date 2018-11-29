@@ -18,7 +18,7 @@ namespace WordCounter.Tests
     [TestMethod]
     public void SplitSentence_CompareWordAndSentence_True()
     {
-      WordAnalysis compareStrings = new WordAnalysis("seent", "I seent a dog");
+      WordAnalysis compareStrings = new WordAnalysis("seent", "I seent, a dog");
       List<string> strings = compareStrings.SplitSentence();
       List<string>  expected = new List<string>(){"seent"};
       CollectionAssert.AreEqual(expected, strings);

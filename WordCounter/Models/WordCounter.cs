@@ -29,15 +29,16 @@ namespace WordCounter
 
     public List<string> SplitSentence()
     {
-      string phrase = _sentence;
-      string[] convertedSentence = phrase.Split(' ');
+      char[] charsToTrim = {',', '.', '?', '!', ';', ':'};
+      string[] convertedSentence = _sentence.Split(' ');
       List<string> matchingWords = new List<string> {};
 
       foreach (string words in convertedSentence)
       {
-        if (words == _word)
+        string perfectWords = words.TrimEnd(charsToTrim);
+        if (perfectWords == _word)
         {
-          matchingWords.Add(words);
+          matchingWords.Add(perfectWords);
         }
       }
       return matchingWords;
