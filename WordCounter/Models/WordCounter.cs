@@ -14,11 +14,6 @@ namespace WordCounter
       _sentence = sentence;
     }
 
-    public string GetWordToCompare()
-    {
-      return _word;
-    }
-
     public bool CheckIfWordIsInString()
     {
       string inputWord = (_word);
@@ -32,22 +27,7 @@ namespace WordCounter
       }
     }
 
-    public bool CompareTwoInputs()
-    {
-      char[] wordArray = _word.ToCharArray();
-      char[] sentenceArray = _sentence.ToCharArray();
-
-      if (wordArray.Length == sentenceArray.Length)
-      {
-        return true;
-      }
-      else
-      {
-        return false;
-      }
-    }
-
-    public List<string> splitSentence()
+    public List<string> SplitSentence()
     {
       string phrase = _sentence;
       string[] convertedSentence = phrase.Split(' ');
@@ -59,56 +39,15 @@ namespace WordCounter
         {
           matchingWords.Add(words);
         }
-        return matchingWords;
       }
+      return matchingWords;
     }
 
-
-    // public bool CompareFirstLetter()
-    // {
-    //   char[] wordArray = _word.ToCharArray();
-    //   char[] sentenceArray = _sentence.ToCharArray();
-    //
-    //   for (int i = 0; i < wordArray.Length; i ++)
-    //   {
-    //     string compare = wordArray[i];
-    //   }
-    //   for (int i = 0; i < sentenceArray.Length; i ++)
-    //   {
-    //     string compareSentence = sentenceArray[i];
-    //   }
-    //   return true;
-    // }
-
-    // public string GetSentenceToCompare()
-    // {
-    //   return _sentence;
-    // }
-    //
-    // public string CompareFirstLetter()
-    // {
-    //   string value = "a";
-    //   char[] array = value.ToCharArray();
-    //
-    //   for (int i=0; i<= array.Length; i ++)
-    //   {
-    //     char letter = array[i=0];
-    //     return letter;
-    //   }
-    //
-    // }
-    //
-    // public string CompareFirstInSentence()
-    // {
-    //   string valueSentence = "a dog walks";
-    //   char[] arrayTwo = valueSentence.ToCharArray();
-    //
-    //   for (int i=0; i<= arrayTwo.Length; i ++)
-    //   {
-    //     char FirstLetter = arrayTwo[i=0];
-    //     return FirstLetter;
-    //   }
-
-    // }
+    public int CountWordsInPhrase()
+    {
+      List<string> matchingWords = SplitSentence();
+      int count = matchingWords.Count;
+      return count;
+    }
   }
 }
