@@ -23,8 +23,8 @@ namespace WordCounter.Controllers
     [HttpGet("/game")]
     public ActionResult Index()
     {
-      WordAnalysis numberOfTimes = WordAnalysis.CountWordsInPhrase();
-      return View(numberOfTimes);
+      WordAnalysis number = WordAnalysis.CountWordsInPhrase();
+      return View(number);
     }
 
   }
