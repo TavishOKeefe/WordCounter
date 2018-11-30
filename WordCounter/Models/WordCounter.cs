@@ -50,6 +50,5 @@ namespace WordCounter.Models
 
       return count;
     }
-
   }
 }
