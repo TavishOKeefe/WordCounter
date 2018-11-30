@@ -47,7 +47,9 @@ namespace WordCounter.Models
     {
       List<string> matchingWords = SplitSentence();
       int count = matchingWords.Count;
+
       return count;
     }
+
   }
 }
