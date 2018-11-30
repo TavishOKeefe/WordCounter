@@ -13,5 +13,11 @@ namespace WordCounter.Controllers
       return View();
     }
 
+    [HttpPost("/game")]
+    public ActionResult Create(string word, string sentence)
+    {
+      WordAnalysis newWordAnalysis = new WordAnalysis(word, sentence);
+      return RedirectToAction("Index");
+    }
   }
 }

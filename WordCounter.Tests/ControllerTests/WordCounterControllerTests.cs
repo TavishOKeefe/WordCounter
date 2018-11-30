@@ -18,5 +18,25 @@ namespace WordCounter.Tests
 
       Assert.IsInstanceOfType(indexView, typeof(ViewResult));
     }
+    [TestMethod]
+    public void Create_ReturnCorrectActionType_RedirectToActionResult()
+    {
+    WordCounterController controller = new WordCounterController();
+
+    IActionResult view = controller.Create("Dog", "I seent a dog today.");
+
+    Assert.IsInstanceOfType(view, typeof(RedirectToActionResult));
+    }
+    [TestMethod]
+    public void Create_ReturnCorrectActionName_Index()
+    {
+    WordCounterController controller = new WordCounterController();
+    RedirectToActionResult actionResult = controller.Create("Dog", "I seent a dog today.") as RedirectToActionResult;
+
+    string result = actionResult.ActionName;
+
+    Assert.AreEqual(result, "Index");
+}
+
   }
 }
