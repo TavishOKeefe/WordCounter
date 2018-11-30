@@ -4,10 +4,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ToDoList
+namespace TravelLog
 {
   public class Startup
   {
+
     public Startup(IHostingEnvironment env)
     {
       var builder = new ConfigurationBuilder()
@@ -28,17 +29,15 @@ namespace ToDoList
       app.UseDeveloperExceptionPage();
       app.UseMvc(routes =>
       {
-        routes.MapRoute(
-          name: "default",
-          template: "{controller=Home}/{action=Index}/{id?}");
+          routes.MapRoute(
+              name: "default",
+              template: "{controller=Home}/{action=Index}/{id?}");
+      });
+      app.Run(async (context) =>
+      {
+          await context.Response.WriteAsync("Hello World!");
       });
 
-        app.Run(async (context) =>
-        {
-          await context.Response.WriteAsync("Something went wrong!");
-        });
-
     }
-
   }
 }
