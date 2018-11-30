@@ -4,11 +4,10 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace WordCounter
+namespace ToDoList
 {
   public class Startup
   {
-
     public Startup(IHostingEnvironment env)
     {
       var builder = new ConfigurationBuilder()
@@ -29,15 +28,17 @@ namespace WordCounter
       app.UseDeveloperExceptionPage();
       app.UseMvc(routes =>
       {
-          routes.MapRoute(
-              name: "default",
-              template: "{controller=Home}/{action=Index}/{id?}");
-      });
-      app.Run(async (context) =>
-      {
-          await context.Response.WriteAsync("Hello World!");
+        routes.MapRoute(
+          name: "default",
+          template: "{controller=Home}/{action=Index}/{id?}");
       });
 
+        app.Run(async (context) =>
+        {
+          await context.Response.WriteAsync("Something went wrong!");
+        });
+
     }
+
   }
 }

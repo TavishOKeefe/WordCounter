@@ -19,3 +19,5 @@
 /Users/tavishokeefe/Desktop/WordCounterProject/WordCounter/obj/Debug/netcoreapp1.1/WordCounter.pdb
 /Users/tavishokeefe/Desktop/WordCounterProject/WordCounter/bin/Debug/netcoreapp1.1/WordCounter.dll
 /Users/tavishokeefe/Desktop/WordCounterProject/WordCounter/bin/Debug/netcoreapp1.1/WordCounter.pdb
+/Users/tavishokeefe/Desktop/WordCounter/WordCounter/bin/Debug/netcoreapp1.1/WordCounter.runtimeconfig.json
+/Users/tavishokeefe/Desktop/WordCounter/WordCounter/bin/Debug/netcoreapp1.1/WordCounter.runtimeconfig.dev.json
