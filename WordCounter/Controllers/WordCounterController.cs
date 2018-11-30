@@ -19,5 +19,13 @@ namespace WordCounter.Controllers
       WordAnalysis newWordAnalysis = new WordAnalysis(word, sentence);
       return RedirectToAction("Index");
     }
+
+    [HttpGet("/game")]
+    public ActionResult Index()
+    {
+      int numberOfTimesWordIsInSentence = WordAnalysis.CountWordsInPhrase();
+      return View(numberOfTimesWordIsInSentence);
+    }
+
   }
 }
