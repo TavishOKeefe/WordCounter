@@ -6,11 +6,22 @@ namespace WordCounter.Models
   {
     private string _word;
     private string _sentence;
+    private int _count;
 
     public WordAnalysis(string word, string sentence)
     {
       _word = word;
       _sentence = sentence;
+    }
+
+    public int GetFinalCount()
+    {
+      return _count;
+    }
+
+    public void SetFinalCount(int count)
+    {
+      _count = count;
     }
 
     public List<string> SplitSentence()
