@@ -13,19 +13,6 @@ namespace WordCounter.Models
       _sentence = sentence;
     }
 
-    public bool CheckIfWordIsInString()
-    {
-      string inputWord = (_word);
-      if (_sentence.Contains(inputWord))
-      {
-        return true;
-      }
-      else
-      {
-        return false;
-      }
-    }
-
     public List<string> SplitSentence()
     {
       char[] charsToTrim = {',', '.', '?', '!', ';', ':'};
@@ -47,7 +34,6 @@ namespace WordCounter.Models
     {
       List<string> matchingWords = SplitSentence();
       int count = matchingWords.Count;
-
       return count;
     }
   }
