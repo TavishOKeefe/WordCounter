@@ -17,14 +17,8 @@ namespace WordCounter.Controllers
     public ActionResult Create(string word, string sentence)
     {
       WordAnalysis newWordAnalysis = new WordAnalysis(word, sentence);
-      return RedirectToAction("Index", newWordAnalysis);
-    }
-
-    [HttpGet("/game")]
-    public ActionResult Index()
-    {
-      // int finalCount = WordAnalysis.CountWordsInPhrase();
-      return View();
+      int finalCount = newWordAnalysis.CountWordsInPhrase();
+      return View("Index", finalCount);
     }
   }
 }
